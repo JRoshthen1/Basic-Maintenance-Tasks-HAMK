@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Martin Jaros Learning Portfolio 1</title>
+</head>
+<body>
+	<div id="desktop">
+
+<!-- FIRST TASK -->
+		<div class="window closed" data-title="1. Bring your Own Device">
+			For this task, I use mostly open sourced software so the applications might differ from the choco install command.
+			<br>
+			<img src="./images/brew-list.png" class="screenshot" alt="Brew list screenshot">
+		</div>
+
+<!-- SECOND TASK -->
+		<div class="window closed" data-title="2. Rename user account">
+			To rename user account, you need to enter the controll panel, select users accounts and change the name of the account.
+			<img src="./images/user-acc-win.png" class="screenshot" alt="Changed user account name">
+		</div>
+
+<!-- THIRD TASK -->
+		<div class="window closed" data-title="3.1 Windows File & Folder Level Permissions">
+			These are the basic permissions that windows offers.
+			<img src="./images/basic-permissions.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+		<div class="window closed" data-title="3.2 User Folder Permissions">
+			This is the user folder with some restricted permissions.
+			<img src="./images/personal-permissions.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+		<div class="window closed" data-title="3.3 OS Folder Permissions">
+			This is the OS folder with some restricted permissions.
+			<img src="./images/advanced-permissions.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+<!-- FOURTH TASK -->
+		<div class="window closed" data-title="4.1 Configure your IPv4 setting.">
+			First image is checking what ip address is the machine using. On the second one I am setting a custom IP with Mask, Gateway and DNS.
+			<div style="display: flex; flex-direction: row;">
+				<img src="./images/check-ip.png" class="screenshot" alt="Basic user permissions"> 
+				<img src="./images/static-ip.png" style="width: 200px" alt="Basic user permissions"> 
+			</div>
+		</div>
+
+		<div class="window closed" data-title="4.2 Release your current IP">
+			Release of the current IP address.
+			<img src="./images/ip-release.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+		<div class="window closed" data-title="4.3 Send continuous ping">
+			Sending a continuous ping to the Google DNS.
+			<img src="./images/ping-t.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+		<div class="window closed" data-title="4.4 Send 20 pings">
+			Sending 20 pings to the Google DNS.
+			<img src="./images/ping-n-20.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+
+		<div class="window closed" data-title="4.5 Trace the path to hamk.fi">
+			Tracing the path to hamk.fi using tracert.
+			<img src="./images/tracert.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+		
+		<div class="window closed" data-title="4.6 IP address of google.fi">
+			Finding out the ip adress of the google.fi website.
+			<img src="./images/nslookup.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+		
+		<div class="window closed" data-title="4.7 Display the list of all active ports">
+			Checking for used ports on the current machine.
+			<img src="./images/netstat-ab.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+		
+		<div class="window closed" data-title="4.8 Display Ethernet statistics">
+			Checking the ethernet statistics on the current machine.
+			<img src="./images/netstat-e.png" class="screenshot" alt="Basic user permissions"> 
+		</div>
+		
+		<div class="window closed" data-title="4.8 Display Ethernet statistics">
+			<ol style="margin-left: 10px;">
+				<li>Run command prompt as administrator</li>
+				<li><code>netsh wlan show profiles</code></li>
+				<li>Find the network you want to forget in the list</li>
+				<li><code>netsh wlan delete profile name="NetworkName</code></li>
+			</ol>
+		</div>
+		
+
+		<div class="window" data-title="Welcome">
+			<h1>Learning Portfolio 1: Basic Maintenance Tasks</h1>
+			<p>Minimize the windows to the taskbar, make them full screen or close them.</p>
+			<p>Drag the title bar to move the windows or resize them from the bottom right corner.</p>
+			<hr />
+			<p><strong>Task was made by <u>Martin Jaros</u> for the Operating systems module</strong></p>
+		</div>
+		
+		<div id="taskbar">		
+		</div>
+		
+		<div id="icons">
+			<a class="openWindow" data-id="0">1. Bring your Own Device</a>
+			<a class="openWindow" data-id="1">2. Rename user account</a>
+			<a class="notLink">3. Windows File & Folder Level Permissions</a>
+			<a class="openWindow indent" data-id="2">3.1 List Folder Permissions</a>
+			<a class="openWindow indent" data-id="3">3.2 User Folder Permissions</a>
+			<a class="openWindow indent" data-id="4">3.3 OS Folder Permissions</a>
+			<a class="notLink">4. Basic Maintenance Task - Network Settings</a>
+			<a class="openWindow indent" data-id="5">4.1 Configure your IPv4 setting.</a>
+			<a class="openWindow indent" data-id="6">4.2 Release your current IP</a>
+			<a class="openWindow indent" data-id="7">4.3 Send continuous ping</a>
+			<a class="openWindow indent" data-id="8">4.4 Send 20 pings</a>
+			<a class="openWindow indent" data-id="9">4.5 Trace the path to hamk.fi</a>
+			<a class="openWindow indent" data-id="10">4.6 IP address of google.fi</a>
+			<a class="openWindow indent" data-id="11">4.7 Display the list of all active ports</a>
+			<a class="openWindow indent" data-id="12">4.8 Display Ethernet statistics</a>
+			<a class="openWindow" data-id="13">5. Specify the steps to forget a wireless network</a>
+
+			
+
+			<a class="openWindow" data-id="20">Welcome screen</a>
+		</div>
+		<a href="https://html5-templates.com/" style="font-size: 1pt;" rel="nofollow" target="_blank" id="templateLink">&copy; HTML5-Templates.com</a>	
+	</div>
+</body>
+
+</html>
